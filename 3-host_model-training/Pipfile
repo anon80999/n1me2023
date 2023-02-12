@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+tqdm = "*"
+pprintpp = "*"
+bela-data-syncer = {editable = true, git = "https://github.com/anon80999/b31a-data-sync3r"}
+tinyneuralnetwork = {git = "https://github.com/alibaba/TinyNeuralNetwork.git"}
+numpy = "==1.23.1"
+
+[dev-packages]
+autopep8 = "*"
+
+[requires]
+python_version = "3.9"

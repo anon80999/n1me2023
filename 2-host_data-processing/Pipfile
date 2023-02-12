@@ -1,0 +1,26 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+jupyter = "*"
+ipykernel = "*"
+pandas = "*"
+matplotlib = "*"
+numpy = "*"
+
+[dev-packages]
+yapf = "*"
+bela-data-syncer = {editable = true, path = "."}
+
+[requires]
+python_version = "3.9"
+
+[pipenv]
+allow_prereleases = true
+
+[scripts]
+path = "pipenv --venv"
+build = "python setup.py develop"
+test = "sh ./test/test.sh"
